@@ -841,7 +841,7 @@ async def on_ready():
 
 	# 디스코드에는 현재 본인이 어떤 게임을 플레이하는지 보여주는 기능이 있습니다.
 	# 이 기능을 사용하여 봇의 상태를 간단하게 출력해줄 수 있습니다.
-	await client.change_presence(status=discord.Status.dnd, activity=discord.Game(name="!메뉴", type=1), afk=False)
+	await client.change_presence(status=discord.Status.dnd, activity=discord.Game(name="레체는 열일", type=1), afk=False)
 
 while True:
 	# 봇이 새로운 메시지를 수신했을때 동작되는 코드입니다.
@@ -1556,7 +1556,7 @@ while True:
 			################ 보탐봇 기본 설정확인 ################ 
 
 			if message.content == command[1]:		
-				setting_val = '보탐봇버전 : Server Ver.14 (2020. 1. 30.)\n'
+				setting_val = '주인 : 레체\n'
 				setting_val += '음성채널 : ' + client.get_channel(basicSetting[6]).name + '\n'
 				setting_val += '텍스트채널 : ' + client.get_channel(basicSetting[7]).name +'\n'
 				if basicSetting[8] != "" :
